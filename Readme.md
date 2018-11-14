@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Natalia Wiman](https://up.htmlacademy.ru/htmlcss/23/user/48181).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Карташов](https://up.htmlacademy.ru/htmlcss/23/user/77080).
 
 ---
 
