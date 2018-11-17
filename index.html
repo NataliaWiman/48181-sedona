@@ -7,14 +7,14 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a clas="main-header-logo">
+        <a class="main-header-logo">
           <img src="img/logo.svg" width="140" height="71" alt="Логотип «Седона»">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Информация</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Карта штата</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -27,37 +27,39 @@
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <b class="features_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p class="features_text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <!-- Здесь будет блок преимуществ -->
       </section>
 
       <section class="search-hotels">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <b class="search-hotels_title">Заинтересовались?</b>
+        <p class="search-hotels_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <span class="button">Поиск гостиницы в Седоне</span>
         <div class="search-hotels-form">
-          <p>Дата заезда:</p>
-          <p>Дата выезда:</p>
-          <p>Взрослые:</p>
-          <p>Дети:</p>
+          <p class="search-hotels-form_text">Дата заезда:</p>
+          <p class="search-hotels-form_text">Дата выезда:</p>
+          <p class="search-hotels-form_text">Взрослые:</p>
+          <p class="search-hotels-form_text">Дети:</p>
           <a class="button" href="#">Найти</a>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <b>#VisitSedona</b>
+      <b class="footer_slogan">#VisitSedona</b>
 
       <div class="footer-social">
-        <a class="social-button">Twitter</a>
-        <a class="social-button">Facebook</a>
-        <a class="social-button">YouTube</a>
+        <ul class="social-list">
+          <li><a class="social-button-item" href="#">Twitter</a></li>
+          <li><a class="social-button-item" href="#">Facebook</a></li>
+          <li><a class="social-button-item" href="#">YouTube</a></li>
+        </ul>
       </div>
 
       <div class="footer-copyright">
-        <p>Website by</p> <a class="footer-copyright-logo" href="#">HTML Academy</a>
+        <p class="footer-copyright_text">Website by</p> <a class="footer-copyright_logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
   </body>
