@@ -14,7 +14,7 @@
           <li class="site-navigation__item"><a class="site-navigation__link" href="#">Информация</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link" href="#">Фото и видео</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link" href="#">Карта штата</a></li>
-          <li class="site-navigation__item--current"><a class="site-navigation__link">Гостиницы</a></li>
+          <li class="site-navigation__item site-navigation__item--current"><a class="site-navigation__link">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -24,7 +24,31 @@
       <h1 class="visually-hidden">Поиск гостиниц</h1>
 
       <section class="hotels-filter">
-        <!-- Здесь будет фильтр -->
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <div class="hotels-filer__infrastructure">
+          <h3 class="hotels-filter__title">Инфраструктура:</h3>
+          <ul class="hotels-filter__list">
+            <li class="hotels-filter-list__item">Бассейн</li>
+            <li class="hotels-filter-list__item">Парковка</li>
+            <li class="hotels-filter-list__item">Wi-Fi</li>
+          </ul>
+        </div>
+
+        <div class="hotels-filter__hotel-type">
+          <h3 class="hotels-filter__title">Тип жилья:</h3>
+          <ul class="hotels-filter__list">
+            <li class="hotels-filter-list__item">Гостиница</li>
+            <li class="hotels-filter-list__item">Мотель</li>
+            <li class="hotels-filter-list__item">Апартаменты</li>
+          </ul>
+        </div>
+
+        <div class="hotels-filter__price">
+          <h3 class="hotels-filter__title">Стоимость в сутки (Р):</h3>
+          <p class="hotels-filter__text">От 0</p>
+          <p class="hotels-filter__text">До 3000</p>
+          <a class="button" href="#">Показать</a>
+        </div>
       </section>      
 
       <section class="hotels-sort">
@@ -51,8 +75,8 @@
             <h3 class="hotels-item__title">Amara Resort & Spa</h3>
             <p class="hotels-item__type">Гостиница</p>
             <p class="hotels-item__price">От 4000 р.</p>
-            <a class="button">Подробнее</a>
-            <a class="button">Забронировать</a>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">Забронировать</a>
             <p class="hotels-item__stars">
               <img src="img/stars.svg" alt="4 звезды">
             </p>
@@ -64,8 +88,8 @@
             <h3 class="hotels-item__title">Desert Quail Inn</h3>
             <p class="hotels-item__type">Мотель</p>
             <p class="hotels-item__price">От 3000 р.</p>
-            <a class="button">Подробнее</a>
-            <a class="button">Забронировать</a>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">Забронировать</a>
             <p class="hotels-item__stars">
               <img src="img/stars.svg" alt="3 звезды">
             </p>
@@ -77,8 +101,8 @@
             <h3 class="hotels-item__title">Villas at Poco Diablo</h3>
             <p class="hotels-item__type">Апартаменты</p>
             <p class="hotels-item__price">От 2000 р.</p>
-            <a class="button">Подробнее</a>
-            <a class="button">Забронировать</a>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">Забронировать</a>
             <p class="hotels-item__stars">
               <img src="img/stars.svg" alt="2 звезды">
             </p>
