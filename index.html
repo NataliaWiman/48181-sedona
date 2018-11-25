@@ -109,24 +109,34 @@
         <button class="button hotels-search__button" type="button">Поиск гостиницы в Седоне</button>
 
         <form class="hotels-search__form hotels-search-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="hotels-search-form__item">
-            <label for="hotels-search_arrival-date">Дата заезда:</label>
-            <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017" id="hotels-search_arrival-date">
-            <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
-          </p>
-          <p class="hotels-search-form__item">
-            <label for="hotels-search_departure-date">Дата выезда:</label>
-            <input type="text" name="departure-date" value="" placeholder="4 июля 2017" id="hotels-search_departure-date">
-            <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
-          </p>
-          <p class="hotels-search-form__item">
-            <label for="hotels-search_adults">Взрослые:</label>
-            <input type="text" name="adults" value="" placeholder="2" id="hotels-search_adults">
-          </p>
-          <p class="hotels-search-form__item">
-            <label for="hotels-search_kids">Дети:</label>
-            <input type="text" name="kids" value="" placeholder="0" id="hotels-search_kids">
-          </p>
+          
+          <fieldset class="hotels-search-form__fieldset">
+            <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+              <p class="hotels-search-form__item">
+                <label for="hotels-search_arrival-date">Дата заезда:</label>
+                <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017" id="hotels-search_arrival-date">
+                <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
+              </p>
+          
+              <p class="hotels-search-form__item">
+                <label for="hotels-search_departure-date">Дата выезда:</label>
+                <input type="text" name="departure-date" value="" placeholder="4 июля 2017" id="hotels-search_departure-date">
+                <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
+              </p>
+
+              <div class="hotels-search-form__container">
+              <p class="hotels-search-form__item">
+                <label for="hotels-search_adults">Взрослые:</label>
+                <input type="text" name="adults" value="" placeholder="2" id="hotels-search_adults">
+              </p>
+
+              <p class="hotels-search-form__item">
+                <label for="hotels-search_kids">Дети:</label>
+                <input type="text" name="kids" value="" placeholder="0" id="hotels-search_kids">
+              </p>
+              </div>
+          </fieldset>
+
           <button class="button hotels-search-form__button" type="submit">Найти</button>
         </form>
       </section>

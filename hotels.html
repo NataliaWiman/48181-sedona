@@ -37,54 +37,54 @@
 
         <form class="hotels-filter__form hotels-filter-form" action="https://echo.htmlacademy.ru" method="GET">
 
-          <fieldset class="hotels-filter-form__infrastracture filter-infrastracture">
-            <legend class="filter-infrastracture__title">Инфраструктура:</legend>
-            <ul class="filter-infrastracture__list">
-              <li class="filter-infrastracture__item">
-                <input clas="visually-hidden filter-infrastracture__option" type="checkbox" name="pool" id="infrastracture-pool" checked>
-                <label for="infrastracture-pool">Бассейн</label>
+          <fieldset class="hotels-filter-form__fieldset">
+            <legend class="hotels-filter-form__title">Инфраструктура:</legend>
+            <ul class="hotels-filter-form__list">
+              <li class="hotels-filter-form__option">
+                <input clas="visually-hidden" type="checkbox" name="pool" id="infrastructure-pool" checked>
+                <label class="hotels-filter-form__label" for="infrastructure-pool">Бассейн</label>
               </li>
 
-              <li class="filter-infrastracture__item">
-                <input class="visually-hidden filter-infrastracture__option" type="checkbox" name="parking-lot" id="infrastracture-parking-lot">
-                <label for="infrastracture-parking-lot">Парковка</label>
+              <li class="hotels-filter-form__option">
+                <input class="visually-hidden" type="checkbox" name="parking-lot" id="infrastructure-parking-lot">
+                <label class="hotels-filter-form__label" for="infrastructure-parking-lot">Парковка</label>
               </li>
 
-              <li class="filter-infrastracture__item">
-                <input class="visually-hidden filter-infrastracture__option" type="checkbox" name="wifi" id="infrastracture-wifi">
-                <label for="infrastracture-wifi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
-
-
-          <fieldset class="hotels-filter-form__hotel-type filter-hotel-type">
-            <legend class="filter-hotel-type__title">Тип жилья:</legend>
-            <ul class="filter-hotel-type__list">
-              <li class="filter-hotel-type__item">
-                <input class="visually-hidden filter-hotel-type__option" type="checkbox" name="hotel" id="hotel-type-hotel" checked>
-                <label for="hotel-type-hotel">Гостиница</label>
-              </li>
-
-              <li class="filter-hotel-type__item">
-                <input class="visually-hidden filter-hotel-type__option" type="checkbox" name="motel" id="hotel-type-motel" checked>
-                <label for="hotel-type-motel">Мотель</label>
-              </li>
-
-              <li class="filter-hotel-type__item">
-                <input class="visually-hidden filter-hotel-type__option" type="checkbox" name="apartments" id="hotel-type-apartments" checked>
-                <label for="hotel-type-apartments">Апартаменты</label>
+              <li class="hotels-filter-form__option">
+                <input class="visually-hidden" type="checkbox" name="wifi" id="infrastructure-wifi">
+                <label class="hotels-filter-form__label" for="infrastructure-wifi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
 
 
+          <fieldset class="hotels-filter-form__fieldset">
+            <legend class="hotels-filter-form__title">Тип жилья:</legend>
+            <ul class="hotels-filter-form__list">
+              <li class="hotels-filter-form__option">
+                <input class="visually-hidden" type="checkbox" name="hotel" id="hotel-type-hotel" checked>
+                <label class="hotels-filter-form__label" for="hotel-type-hotel">Гостиница</label>
+              </li>
 
-          <fieldset class="hotels-filter-form__price filter-price">
-            <legend class="filter-price__title">Стоимость в сутки (Р):</legend>
-            <p class="filter-price__text">От 0</p>
-            <p class="filter-price__text">До 4000</p>
-            <input class="filter-price__option" type="range" min="0" max="4000" step="500" value="3000" name="hotel-price-max" id="hotel-price-range-max">
+              <li class="hotels-filter-form__option">
+                <input class="visually-hidden" type="checkbox" name="motel" id="hotel-type-motel" checked>
+                <label class="hotels-filter-form__label" for="hotel-type-motel">Мотель</label>
+              </li>
+
+              <li class="hotels-filter-form__option">
+                <input class="visually-hidden" type="checkbox" name="apartments" id="hotel-type-apartments" checked>
+                <label class="hotels-filter-form__label" for="hotel-type-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+
+          <fieldset class="hotels-filter-form__fieldset">
+            <legend class="hotels-filter-form__title">Стоимость в сутки (Р):</legend>
+            <p class="hotels-filter-form__text">От 0</p>
+            <p class="hotels-filter-form__text">До 4000</p>
+            <input class="hotels-filter-form___item" type="range" min="0" max="4000" step="500" value="3000" name="hotel-price-max" id="hotel-price-range-max">
           </fieldset>
 
           <button class="button hotels-filter-form__button" type="submit">Показать</a>
@@ -100,22 +100,23 @@
 
           <ul class="sort-filter__list">
             <li class="sort-filter__item">
-              <button class="button sort-filter__button-link sort-filter__button-link--current" type="button">По цене</button>
+              <a class="sort-filter__link sort-filter__link--current" href="#">По цене</a>
             </li>
             <li class="sort-filter__item">
-              <button class="button sort-filter__button-link" type="button">По типу</button>
+              <a class="sort-filter__link sort-filter__link" href="#">По типу</a>
             </li>
             <li class="sort-filter__item">
-              <button class="button sort-filter__button-link" type="button">По рейтингу</button>
+              <a class="sort-filter__link sort-filter__link" href="#">По рейтингу</a>
             </li>
           </ul>
         </div>
-        <ul class="hotels-sort__buttons sort-buttons">
-          <li class="sort-buttons__increase">
-            <button class="sort-filter__button--increase">По возрастанию</button>
+
+        <ul class="sort-filter__list sort-buttons">
+          <li class="sort-buttons__item">
+            <a class="sort-buttons__link sort-buttons__link--increase" href="#">По возрастанию</a>
           </li>
-          <li class="sort-buttons__decrease">
-            <button class="sort-filter__button--decrease">По убыванию</button>
+          <li class="sort-buttons__item">
+            <a class="sort-buttons__link sort-buttons__link--decrease" href="#">По убыванию</a>
           </li>
         </ul>
 
