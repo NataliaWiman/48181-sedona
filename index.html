@@ -16,7 +16,7 @@
       <header class="main-header">
         <nav class="main-header__navigation">
           <a class="main-header__logo">
-            <img src="img/svg/logo-sedona.svg" width="140" height="71" alt="Седона">
+            <img class="main-header__image" src="img/svg/logo-sedona.svg" width="140" height="71" alt="Седона">
           </a>
           <ul class="main-header__site-navigation site-navigation">
             <li class="site-navigation__item">
@@ -48,14 +48,14 @@
         <section class="features">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="features__header">
-            <b class="features__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p class="features__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
           
           <div class="features__container features__container--inverted">
             <div class="features__item features-item features-item--inverted">
               <h3 class="features-item__title">Настоящий городок</h3>
-              <p class="features-item__text">&ndash; №1 &ndash;</p>
+              <p class="features-item__number">&ndash; №1 &ndash;</p>
               <p class="features-item__text">Седона &ndash; не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
           </div>
@@ -82,28 +82,34 @@
           <div class="features__container features__container--inverted">
             <div class="features__item features-item features-item--inverted">
               <h3 class="features-item__title">Там есть Мост дьявола</h3>
-              <p class="features-item__text">&ndash; №2 &ndash;</p>
+              <p class="features-item__number">&ndash; №2 &ndash;</p>
               <p class="features-item__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
 
           <div class="features__container">
             <div class="features__item features-item">
-              <h3 class="features-item__title">Небольшая площадь</h3>
-              <p class="features-item__text">&ndash; №3 &ndash;</p>
-              <p class="features-item__text">Все достопримечательности находятся очень близко</p>
+              <div class="features-item__wrapper">
+                <h3 class="features-item__title">Небольшая площадь</h3>
+                <p class="features-item__number">&ndash; №3 &ndash;</p>
+                <p class="features-item__text">Все достопримечательности находятся очень близко</p>
+            </div>
             </div>
 
             <div class="features__item features-item">
+              <div class="features-item__wrapper">
               <h3 class="features-item__title">Красивая дорога</h3>
-              <p class="features-item__text">&ndash; №4 &ndash;</p>
+              <p class="features-item__number">&ndash; №4 &ndash;</p>
               <p class="features-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
+            </div>
 
             <div class="features__item features-item">
+                <div class="features-item__wrapper">
               <h3 class="features-item__title">Мало туристов</h3>
-              <p class="features-item__text">&ndash; №5 &ndash;</p>
+              <p class="features-item__number">&ndash; №5 &ndash;</p>
               <p class="features-item__text">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
             </div>
           </div>
         </section>
@@ -112,43 +118,48 @@
         <section class="hotels-search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <div class="hotels-search__header">
-            <b class="hotels-search__title">Заинтересовались?</b>
+            <p class="hotels-search__title">Заинтересовались?</p>
             <p class="hotels-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
 
           <button class="button hotels-search__button" type="button">Поиск гостиницы в Седоне</button>
 
-          <form class="hotels-search__form hotels-search-form" action="https://echo.htmlacademy.ru" method="post">
-            
-            <fieldset class="hotels-search-form__fieldset">
-              <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
-                <p class="hotels-search-form__item">
-                  <label for="hotels-search_arrival-date">Дата заезда:</label>
-                  <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017" id="hotels-search_arrival-date">
-                  <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
-                </p>
-            
-                <p class="hotels-search-form__item">
-                  <label for="hotels-search_departure-date">Дата выезда:</label>
-                  <input type="text" name="departure-date" value="" placeholder="4 июля 2017" id="hotels-search_departure-date">
-                  <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
-                </p>
+          <div class="hotels-search__container">
 
-                <div class="hotels-search-form__container">
-                <p class="hotels-search-form__item">
-                  <label for="hotels-search_adults">Взрослые:</label>
-                  <input type="text" name="adults" value="" placeholder="2" id="hotels-search_adults">
-                </p>
+            <form class="hotels-search__form hotels-search-form" action="https://echo.htmlacademy.ru" method="post">
+              
+              <fieldset class="hotels-search-form__fieldset">
+                <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+                  <p class="hotels-search-form__item">
+                    <label for="hotels-search_arrival-date">Дата заезда:</label>
+                    <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017" id="hotels-search_arrival-date">
+                    <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
+                  </p>
+              
+                  <p class="hotels-search-form__item">
+                    <label for="hotels-search_departure-date">Дата выезда:</label>
+                    <input type="text" name="departure-date" value="" placeholder="4 июля 2017" id="hotels-search_departure-date">
+                    <button class="hotels-search-form__calendar-icon" type="button" aria-label="Открыть календарь">Календарь</button>
+                  </p>
 
-                <p class="hotels-search-form__item">
-                  <label for="hotels-search_kids">Дети:</label>
-                  <input type="text" name="kids" value="" placeholder="0" id="hotels-search_kids">
-                </p>
-                </div>
-            </fieldset>
+                  <div class="hotels-search-form__container">
+                  <p class="hotels-search-form__item">
+                    <label for="hotels-search_adults">Взрослые:</label>
+                    <input type="text" name="adults" value="" placeholder="2" id="hotels-search_adults">
+                  </p>
 
-            <button class="button hotels-search-form__button" type="submit">Найти</button>
-          </form>
+                  <p class="hotels-search-form__item">
+                    <label for="hotels-search_kids">Дети:</label>
+                    <input type="text" name="kids" value="" placeholder="0" id="hotels-search_kids">
+                  </p>
+                  </div>
+              </fieldset>
+
+              <button class="button hotels-search-form__button" type="submit">Найти</button>
+            </form>
+
+          </div>
+
         </section>
 
 
@@ -161,27 +172,32 @@
 
       <footer class="main-footer">
 
-        <div class="main-footer__slogan footer-slogan">
-          <b class="footer-slogan__title">#VisitSedona</b>
-        </div>
+        <div class="main-footer__container">
 
-        <div class="main-footer__social footer-social">
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="#">Twitter</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="#">Facebook</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="#">YouTube</a>
-            </li>
-          </ul>
+          <div class="main-footer__slogan footer-slogan">
+            <p class="footer-slogan__title">#VisitSedona</p>
+          </div>
+
+          <div class="main-footer__social footer-social">
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="#">Twitter</a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="#">Facebook</a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="#">YouTube</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-footer__copyright footer-copyright">
+            <p class="footer-copyright__text">Website by</p> <a class="footer-copyright__logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </div>
+
       </div>
 
-        <div class="main-footer__copyright footer-copyright">
-          <p class="footer-copyright__text">Website by</p> <a class="footer-copyright__logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        </div>
       </footer>
 
     </div>
