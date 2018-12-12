@@ -101,16 +101,19 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
-.main-navigation__item:nth-child(2) {
+.main-navigation__item:nth-child(2),
+.main-navigation__item:nth-child(6) {
   margin-right: 50px;
 }
 
-.main-navigation__item:nth-child(3) {
+.main-navigation__item:nth-child(3),
+.main-navigation__item:nth-child(7) {
   text-align: right;
   margin-left: 50px;
 }
 
-.main-navigation__item:nth-child(4) {
+.main-navigation__item:nth-child(4),
+.main-navigation__item:nth-child(8) {
   text-align: right;
 }
 
@@ -164,7 +167,7 @@ input[type="radio"].visually-hidden {
 .features__title {
   display: block;
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -192,7 +195,7 @@ input[type="radio"].visually-hidden {
 .features-item__title {
   display: block;
   margin: 0 auto;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   width: 160px;
   font-size: 21px;
   color: #000000;
@@ -208,7 +211,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   color: #333333;
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .features__container {
@@ -692,8 +695,6 @@ input[type="radio"].visually-hidden {
   color: #797979;
 }
 
-
-
 .wrapper__price-range .hotels-filter-form__title {
   margin-bottom: 9px;
 }
@@ -724,7 +725,7 @@ input[type="radio"].visually-hidden {
 .price-controls__min-price,
 .price-controls__max-price {
   display: inline-block;
-  width: 90px;
+  width: 81px;
   padding-left: 65px;
 
   font-size: 14px;
@@ -787,11 +788,10 @@ input[type="radio"].visually-hidden {
 .hotels-filter-form__button {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
-
+  margin-left: 85px;
+  padding: 6px 34px;
   font-weight: 400;
   color: #ffffff;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -807,8 +807,6 @@ input[type="radio"].visually-hidden {
   transition: background-color 0.3s;
 } 
 
-
-
 .hotels-sort {
   padding: 30px 70px;
   color: #000000;
@@ -822,7 +820,7 @@ input[type="radio"].visually-hidden {
 
 .hotels-sort__resault {
   margin: 0;
-  width: 160px;
+  width: 165px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -835,22 +833,21 @@ input[type="radio"].visually-hidden {
 
 .sort-filter__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-size: 12px;
-  line-height: 18px;
   list-style: none;
 }
 
 .sort-filter__item {
-  padding-right: 30px;
+  padding-right: 33px;
 }
 
 .sort-filter__title {
   margin: 0;
   padding-right: 40px;
   font-size: 12px;
-  line-height: 18px;
 }
 
 .sort-filter__link {
@@ -883,7 +880,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-arrows__increase {
-  margin-right: 10px;
+  margin-right: 15px;
   width: 11px;
   height: 10px;
   border-bottom: solid 10px #cacaca;
@@ -950,13 +947,6 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.hotels-item__score-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-
 .hotels-item__image {
   width: 135px;
   height: 90px;
@@ -997,6 +987,7 @@ input[type="radio"].visually-hidden {
   min-width: 110px;
   font-size: 14px;
   line-height: 21px;
+  vertical-align: middle;
 }
 
 .hotels-item__button-info {
@@ -1030,6 +1021,13 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
+.hotels-item__score-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
 .hotels-item__stars {
   margin: 0;
   text-align: right;
@@ -1040,15 +1038,16 @@ input[type="radio"].visually-hidden {
   width: 18px;
   height: 17px;
   margin-left: 2px;
+  vertical-align: top;
   background-image: url("../img/svg/star.svg");
   background-repeat: no-repeat;
 }
 
 .hotels-item__score {
   margin: 0;
-  padding: 3px 14px;
+  padding: 3px 0;
   min-width: 110px;
-  text-align: right;
+  text-align: center;
   color: #666666;
   background-color: #f2f2f2;  
 }
@@ -1067,7 +1066,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   padding: 35px 70px;
   color: #000000;
-  background-color: rgba(250, 250, 250, 0.9)
+  background-color: #ffffff;
 }
 
 .main-footer__slogan {
