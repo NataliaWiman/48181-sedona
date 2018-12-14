@@ -841,12 +841,12 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-filter__item {
-  padding-right: 33px;
+  margin-right: 33px;
 }
 
 .sort-filter__title {
   margin: 0;
-  padding-right: 40px;
+  margin-right: 40px;
   font-size: 12px;
 }
 
