@@ -600,17 +600,21 @@ input[type="radio"].visually-hidden {
 }
 
 .map__image {
+  position: absolute;
   top: 0;
   width: 1200px;
   min-height: 593px;
 }
 
+.map__iframe {
+  position: relative;
+
+  border: none;
+}
+
 .hotels-filter {
   color: #ffffff;
   background-color: #749bbe;
-  background-image: url(../img/static/header-bg-blur.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
   padding: 27px 70px 31px 70px;
 }
 
