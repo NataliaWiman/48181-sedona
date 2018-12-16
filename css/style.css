@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0 auto;
   margin-bottom: 25px;
-  width: 160px;
+  width: 150px;
   font-size: 21px;
   color: #000000;
 }
@@ -339,6 +339,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-search__button {
+  position: relative;
   display: block;
   margin: 0 auto;
   min-width: 100%;
@@ -351,6 +352,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #766357;
   cursor: pointer;
+  outline: none;
+  z-index: 2;
 }
 
 .hotels-search__button:hover,
@@ -364,9 +367,35 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
-.hotels-search__container {
+.hotels-search__popup {
   position: relative;
   z-index: 1;
+}
+
+.popup-hide {
+  display: none;
+}
+
+.popup-show {
+  animation-name: slide-down;
+  animation-duration: 0.6s;
+}
+
+.popup-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-down {
+  0%  { transform: scaleY(0) translateY(-400px); }
+  50% { transform: scaleY(0) translateY(-200px); }
+  100% { transform: scaleY(1) translateY(100%); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); } 
 }
 
 .hotels-search__form {
@@ -548,6 +577,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: 700;
   cursor: pointer;
+  outline: none;
 }
 
 .hotels-search-form__button:hover,
@@ -562,13 +592,14 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  position: relative;
-  min-height: 473px;
+  margin: 0;
+  padding: 0;
+  height: 473px;
   background-color: #f2f2f2;
+  background-image: url("../img/static/map.jpg")
 }
 
 .map__image {
-  position: absolute;
   top: 0;
   width: 1200px;
   min-height: 593px;
