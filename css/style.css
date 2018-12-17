@@ -353,7 +353,7 @@ input[type="radio"].visually-hidden {
   background-color: #766357;
   cursor: pointer;
   outline: none;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hotels-search__button:hover,
@@ -363,13 +363,13 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-search__button:active {
-  color: rgba(250, 250, 250, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
 .hotels-search__popup {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .popup-hide {
@@ -587,35 +587,17 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-search-form__button:active {
-  color: rgba(250, 250, 250, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-}
-
-.map {
-  margin: 0;
-  padding: 0;
-  height: 473px;
-  background-color: #f2f2f2;
-  background-image: url("../img/static/map.jpg")
-}
-
-.map__image {
-  position: absolute;
-  top: 0;
-  width: 1200px;
-  min-height: 593px;
-}
-
-.map__iframe {
-  position: relative;
-
-  border: none;
 }
 
 .hotels-filter {
   color: #ffffff;
   background-color: #749bbe;
   padding: 27px 70px 31px 70px;
+  background-image: url("../img/static/header-bg-blur.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
 }
 
 .hotels-filter__form {
@@ -1037,7 +1019,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-item__button-info:active {
-  color: rgba(250, 250, 250, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -1052,7 +1034,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-item__button-book:active {
-  color: rgba(250, 250, 250, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -1087,24 +1069,40 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;  
 }
 
+.map {
+  height: 593px;
+  background-color: #f2f2f2;
+  background-image: url("../img/static/map.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.map__iframe {
+  position: relative;
+  border: none;
+}
+
 .main-footer {
   position: relative;
   width: 1200px;
   min-height: 120px;
-  background-color: #ffffff;
+  z-index: 1;
 }
 
 .main-footer__container {
   position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   width: 1200px;
   padding: 35px 70px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgba(254, 254, 254, 0.9);
 }
 
 .main-footer__slogan {
+  position: relative;
   width: 140px;
   margin: 0;
   padding: 0;
@@ -1157,7 +1155,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social__link:active path {
-  fill: rgba(250, 250, 250, 0.3)
+  fill: rgba(255, 255, 255, 0.3)
 }
 
 .main-footer__copyright {
