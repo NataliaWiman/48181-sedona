@@ -258,6 +258,10 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.features-item--inverted .features-item__title {
+  width: 160px;
+}
+
 .features__container:last-of-type {
   background-color: #eeeeee;
 }
@@ -691,10 +695,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: block;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .hotels-filter-form__input--checkbox + label::before {
